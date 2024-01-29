@@ -46,6 +46,12 @@ function setup() {
     boatAnimation.push(img);
   }
 
+  var brokenBoatFrames = brokenBoatSpritedata.frames;
+  for (var i = 0; i < brokenBoatFrames.length; i++) {
+    var pos = brokenBoatFrames[i].position;
+    var img = brokenBoatSpritesheet.get(pos.x, pos.y, pos.w, pos.h);
+    brokenBoatAnimation.push(img);
+  }
 
   var waterSplashFrames = waterSplashSpritedata.frames;
   for (var i = 0; i < waterSplashFrames.length; i++) {
